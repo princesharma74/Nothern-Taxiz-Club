@@ -13,7 +13,7 @@ export const HeroSection = () => {
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
-            <h1>High Quality Taxi & Rideshare Protection</h1>
+            <h1>High Quality Rideshare Car Protection</h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">

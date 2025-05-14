@@ -33,7 +33,7 @@ const FAQList: FAQProps[] = [
   {
     question: "How do I make a claim?",
     answer:
-      "Making a claim is simple. Contact our 24/7 claims hotline, provide your membership details and incident information, and our team will guide you through the process.",
+      "Making a claim is simple. Contact us on 0480033986, provide your membership details and incident information, and our team will guide you through the process.",
     value: "item-4",
   },
   {

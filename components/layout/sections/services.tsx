@@ -35,12 +35,6 @@ const serviceList: ServiceProps[] = [
     pro: 0,
   },
   {
-    title: "Premium, Maxi and XL Cover",
-    description:
-      "Specialized coverage options for different vehicle types and premium service vehicles.",
-    pro: 0,
-  },
-  {
     title: "Hire Car Cover",
     description:
       "Specialized protection for hire car operators with unique business needs.",

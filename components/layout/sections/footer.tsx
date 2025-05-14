@@ -1,6 +1,34 @@
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
+import { ChevronsDownIcon, Divide } from "lucide-react";
 import Link from "next/link";
+
+interface RouteProps {
+  href: string;
+  label: string;
+}
+
+const routeList: RouteProps[] = [
+  {
+    href: "#",
+    label: "Home",
+  },
+  {
+    href: "#why-choose-us",
+    label: "Why Us",
+  },
+  {
+    href: "#testimonials",
+    label: "Testimonials",
+  },
+  {
+    href: "#contact",
+    label: "Contact",
+  },
+  {
+    href: "#faqs",
+    label: "FAQs"
+  }
+];
 
 export const FooterSection = () => {
   return (
@@ -16,49 +44,21 @@ export const FooterSection = () => {
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Quick Links</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Home
-              </Link>
-            </div>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                About Us
-              </Link>
-            </div>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Services
-              </Link>
-            </div>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Membership
-              </Link>
-            </div>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Make A Claim
-              </Link>
-            </div>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact
-              </Link>
-            </div>
+            {routeList.map((item, index) => (
+              <div key={index}>
+                <Link href={item.href}>{item.label}</Link>
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Our Location</h3>
             <div>
-              <p className="opacity-60">123 Transport Street, Melbourne VIC 3000</p>
+              <p className="opacity-60">
+                53 Jutland Way, Epping VIC 3076, Australia
+              </p>
               <p className="opacity-60">northerntaxizclub@gmail.com</p>
-              <p className="opacity-60">03 XXXX XXXX</p>
-            </div>
-            <div>
-              <p className="opacity-60">456 Driver Avenue, Thomastown VIC 3074</p>
-              <p className="opacity-60">northerntaxizclub2@gmail.com</p>
-              <p className="opacity-60">03 XXXX XXXX</p>
+              <p className="opacity-60">04 8003 3986</p>
             </div>
           </div>
         </div>
@@ -66,7 +66,8 @@ export const FooterSection = () => {
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
-            &copy; 2025 All Rights Reserved | Northern Taxiz Club, Melbourne Australia.
+            &copy; 2025 All Rights Reserved | Northern Taxiz Club, Melbourne
+            Australia.
           </h3>
         </section>
       </div>
