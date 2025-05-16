@@ -23,15 +23,9 @@ const serviceList: ServiceProps[] = [
     pro: 0,
   },
   {
-    title: "At Fault Protection",
+    title: "Not At Fault Protection",
     description:
       "Coverage when accidents happen that are determined to be your fault, minimizing your financial exposure.",
-    pro: 0,
-  },
-  {
-    title: "Theft and Malicious Damages",
-    description:
-      "Protection against vehicle theft, vandalism, and intentional damage by others.",
     pro: 0,
   },
   {

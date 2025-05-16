@@ -57,7 +57,11 @@ export const FooterSection = () => {
               <p className="opacity-60">
                 53 Jutland Way, Epping VIC 3076, Australia
               </p>
-              <p className="opacity-60">northerntaxizclub@gmail.com</p>
+              <p className="opacity-60">
+                <Link href="mailto:northerntclub@gmail.com">
+                  northerntclub@gmail.com
+                </Link>
+              </p>
               <p className="opacity-60">04 8003 3986</p>
             </div>
           </div>

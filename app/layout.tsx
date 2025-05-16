@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Northern Taxiz Club",
-  description: "",
+  description: "We provide all types of covers for specified loss of or damage to your taxi and rideshare Melbourne vehicle.",
 };
 
 export default function RootLayout({
